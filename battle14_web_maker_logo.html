@@ -1,0 +1,36 @@
+<p><b>
+    <style>
+        * {
+            background: #f2f2b6;
+            margin: 0
+        }
+
+        p,
+        p:before,
+        b:after,
+        b:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border: solid;
+            border-width: 0 75 130 75;
+            border-color: 0 transparent #fd4602;
+            position: fixed;
+            top: 85;
+            right: 80
+        }
+
+        p,
+        b:after {
+            border-color: 0 transparent #ff6d00;
+            right: 60
+        }
+
+        b:after,
+        b:before {
+            transform: rotate(180deg);
+            left: 80
+        }
+
+        b:after {
+            left: 60
